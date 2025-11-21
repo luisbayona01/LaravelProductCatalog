@@ -273,7 +273,7 @@ async function loadProducts() {
     }
 
     try {
-        const response = await fetch('http://localhost:8000/api/products', {
+        const response = await fetch('/api/products', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`,

@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', function() {
     selectedFiles.forEach(file => formData.append('images[]', file));
     imagesToDelete.forEach(id => formData.append('delete_images[]', id));
 
-    fetch(`http://localhost:8000/api/products/${productId}`, {
+    fetch(`/api/products/${productId}`, {
         method: 'POST',
         body: formData,
         headers: authHeaders // SOLO si NO incluyes Content-Type
