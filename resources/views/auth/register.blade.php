@@ -124,7 +124,7 @@ function clearErrors(){
             if (res.ok) {
                 // Si la API devuelve token
                 if (data.token) localStorage.setItem('token', data.token);
-                window.location.href = '/dashboard';
+                window.location.href = 'product/list';
                 return;
             }
 
