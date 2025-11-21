@@ -415,7 +415,7 @@ async function deleteProduct(productId) {
     }
 
     try {
-        const response = await fetch(`http://localhost:8000/api/products/${productId}`, {
+        const response = await fetch(`/api/products/${productId}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`,
